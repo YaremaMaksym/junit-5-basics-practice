@@ -30,6 +30,15 @@
         </dependency>
     </dependencies>
 
+    <profiles>
+        <profile>
+            <id>allTests</id>
+            <properties>
+                <groups>unit,integration</groups>
+            </properties>
+        </profile>
+    </profiles>
+
     <build>
         <plugins>
             <plugin>

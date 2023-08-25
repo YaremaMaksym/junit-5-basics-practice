@@ -24,6 +24,7 @@ class MathUtilsTest {
     }
 
     @Test
+    @Tag("unit")
     @DisplayName("Should add two numbers test")
     void itShouldAddTwoNumbers() {
         MathUtils mathUtils = new MathUtils();
@@ -34,6 +35,7 @@ class MathUtilsTest {
     }
 
     @Test
+    @Tag("unit")
     @DisplayName("Should compute circle area test")
     void itShouldComputeCircleArea() {
         MathUtils mathUtils = new MathUtils();
@@ -44,6 +46,7 @@ class MathUtilsTest {
     }
 
     @Nested
+    @Tag("unit")
     @DisplayName("divide method tests")
     class divTest {
 
@@ -68,6 +71,7 @@ class MathUtilsTest {
     }
 
     @Test
+    @Tag("unit")
     @DisplayName("TDD method. Should not run")
     @Disabled
     void itShouldMultiplyTwoNumbers(){
