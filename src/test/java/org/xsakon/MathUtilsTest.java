@@ -1,10 +1,29 @@
 package org.xsakon;
 
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class MathUtilsTest {
+    MathUtils mathUtils;
+
+    @BeforeAll
+    static void beforeAll() {
+        System.out.println("This runs before all tests");
+    }
+
+    @BeforeEach
+    void setUp() {
+        mathUtils = new MathUtils();
+    }
+
+    @AfterEach
+    void tearDown() {
+        System.out.println("This runs after each test");
+    }
 
     @Test
     void itShouldAddTwoNumbers() {
