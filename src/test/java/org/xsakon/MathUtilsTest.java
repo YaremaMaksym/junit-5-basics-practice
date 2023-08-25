@@ -60,4 +60,11 @@ class MathUtilsTest {
 
         assertThrows(ArithmeticException.class, () -> mathUtils.div(2, 0));
     }
+
+    @Test
+    @DisplayName("TDD method. Should not run")
+    @Disabled
+    void itShouldMultiplyTwoNumbers(){
+        fail("this test should be skipped");
+    }
 }
