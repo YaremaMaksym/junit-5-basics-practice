@@ -10,7 +10,7 @@ public class MathUtils {
         return radius * radius * Math.PI;
     }
 
-    public static double div(int a, int b){
-        return (double) a / b;
+    public static int div(int a, int b){
+        return a / b;
     }
 }
