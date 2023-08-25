@@ -17,6 +17,7 @@ class MathUtilsTest {
 
     @BeforeEach
     void setUp() {
+        System.out.println("This runs before each test");
         mathUtils = new MathUtils();
     }
 
