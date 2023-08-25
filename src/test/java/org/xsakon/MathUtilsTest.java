@@ -1,9 +1,6 @@
 package org.xsakon;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -27,6 +24,7 @@ class MathUtilsTest {
     }
 
     @Test
+    @DisplayName("Should add two numbers test")
     void itShouldAddTwoNumbers() {
         MathUtils mathUtils = new MathUtils();
         int expected = -2;
@@ -36,6 +34,7 @@ class MathUtilsTest {
     }
 
     @Test
+    @DisplayName("Should compute circle area test")
     void itShouldComputeCircleArea() {
         MathUtils mathUtils = new MathUtils();
 
@@ -45,6 +44,7 @@ class MathUtilsTest {
     }
 
     @Test
+    @DisplayName("Should divide two numbers test")
     void itShouldDivideTwoNumbers() {
         MathUtils mathUtils = new MathUtils();
 
@@ -54,6 +54,7 @@ class MathUtilsTest {
     }
 
     @Test
+    @DisplayName("Should throw an arithmetic exception test")
     void itShouldThrowException() {
         MathUtils mathUtils = new MathUtils();
 
