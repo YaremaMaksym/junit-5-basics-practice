@@ -13,4 +13,12 @@ class MathUtilsTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    void itShouldComputeCircleArea() {
+
+        double expected = Math.PI * 100;
+
+        assertEquals(expected, MathUtils.computeCircleArea(10));
+    }
 }
