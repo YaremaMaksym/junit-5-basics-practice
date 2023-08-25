@@ -21,4 +21,17 @@ class MathUtilsTest {
 
         assertEquals(expected, MathUtils.computeCircleArea(10));
     }
+
+    @Test
+    void itShouldDivideTwoNumbers() {
+
+        double expected = 1;
+
+        assertEquals(expected, MathUtils.div(3, 2));
+    }
+
+    @Test
+    void itShouldThrowException() {
+        assertThrows(ArithmeticException.class, () -> MathUtils.div(2, 0));
+    }
 }
