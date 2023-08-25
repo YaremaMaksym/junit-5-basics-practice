@@ -43,22 +43,28 @@ class MathUtilsTest {
         assertEquals(expected, mathUtils.computeCircleArea(10));
     }
 
-    @Test
-    @DisplayName("Should divide two numbers test")
-    void itShouldDivideTwoNumbers() {
-        MathUtils mathUtils = new MathUtils();
+    @Nested
+    @DisplayName("divide method tests")
+    class divTest {
 
-        double expected = 1;
+        @Test
+        @DisplayName("Should divide two numbers test")
+        void itShouldDivideTwoNumbers() {
+            MathUtils mathUtils = new MathUtils();
 
-        assertEquals(expected, mathUtils.div(3, 2));
-    }
+            double expected = 1;
 
-    @Test
-    @DisplayName("Should throw an arithmetic exception test")
-    void itShouldThrowException() {
-        MathUtils mathUtils = new MathUtils();
+            assertEquals(expected, mathUtils.div(3, 2));
+        }
 
-        assertThrows(ArithmeticException.class, () -> mathUtils.div(2, 0));
+        @Test
+        @DisplayName("Should throw an arithmetic exception test")
+        void itShouldThrowException() {
+            MathUtils mathUtils = new MathUtils();
+
+            assertThrows(ArithmeticException.class, () -> mathUtils.div(2, 0));
+        }
+
     }
 
     @Test
